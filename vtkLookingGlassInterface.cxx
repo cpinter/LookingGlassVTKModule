@@ -256,6 +256,21 @@ vtkLookingGlassInterface::GetSettingsByDevice()
       8, 9,        // QuiltTiles
       1.777        // AspectRatio
     );
+    settingsByDevice["go_p"] = DeviceSettings("Looking Glass Go Portrait",
+      4092, 4092, // QuiltSize
+      11, 6,      // QuiltTiles (11 columns x 6 rows)
+      0.5625      // AspectRatio (1440/2560)
+    );
+    settingsByDevice["16_gen3_l"] = DeviceSettings("Looking Glass 16\" Light Field Display (Landscape)",
+      5999, 5999,  // QuiltSize
+      7, 7,        // QuiltTiles
+      1.777        // AspectRatio
+    );
+    settingsByDevice["16_gen3_p"] = DeviceSettings("Looking Glass 16\" Light Field Display (Portrait)",
+      5995, 6000,  // QuiltSize
+      11, 6,       // QuiltTiles
+      0.5625       // AspectRatio
+    );
   }
 
   return settingsByDevice;
